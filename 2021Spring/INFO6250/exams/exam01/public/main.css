@@ -1,0 +1,69 @@
+.user-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ol.word_list{
+    background-color: lightblue;
+    overflow-wrap:break-word;
+    /* width: 600px; */
+    height: 80px;
+    overflow: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    overflow:auto; 
+}
+
+div.target-list > span{
+    margin:auto; display:table; border:1px solid red;
+}
+
+.retry-panel{
+    text-align: center;
+}
+.gaming-pane{
+    text-align: center;
+}
+.result-panel{
+    display: flex;
+    justify-content: center;
+}
+
+.warning {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.success {
+    color: #270;
+    background-color: #DFF2BF;
+}
+
+.info{
+    color: #059;
+    background-color: #BEF;
+  }
+
+.info,
+.success,
+.warning{
+   width: 400px;
+  margin: 10px 0;
+
+  border-radius: 3px 3px 3px 3px;
+}
+
+/* div.result-panel{
+    overflow-wrap:break-word;
+    /* width: 600px; */
+    /* height: 200px;
+    overflow: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    overflow:auto; 
+} */
