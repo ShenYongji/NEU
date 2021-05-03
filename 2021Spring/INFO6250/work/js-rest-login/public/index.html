@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking List</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class = 'user' hidden>
+        <div class="name"></div>
+        <button class="logout">Logout</button>
+        <hr>
+    </div>
+    <h2>Ranking List</h2>
+    <hr>
+    <div class="inventory-app">
+        <div class="input-panel">
+            <input class="input" placeholder="Add Item Here" required>
+            <button class="add-button">Add</button>
+        </div>
+        <div>
+            <p class='list_status'></p>
+        </div>
+        <div class="display-panel">
+            <button class="ascending">Ascending</button>
+            <button class="descending"> Descending</button>
+            <!-- <button class="reset">Reset</button> -->
+            <ul class="item-list">
+            </ul>
+        </div>
+    </div>
+
+    <dialog class="loginpage">
+        <div>
+            <label>Username</label>
+            <input class = "username" name="username" required>
+            <button class = "login" type="submit">Login</button>
+        </div>
+        <div>
+            <p class="login-status"></p>
+        </div>
+    </dialog>
+ 
+    <script src = './backend.js'></script> 
+</body>
+</html>

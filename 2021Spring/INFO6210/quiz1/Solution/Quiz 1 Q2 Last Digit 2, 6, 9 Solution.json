@@ -1,0 +1,56 @@
+{
+    "_id": {
+        "$oid": "605bff0050a3ed032b06c7ca"
+    },
+    "State": "Arizona",
+    "Territory": {
+        "$oid": "605bfec750a3ed032b06c7c9"
+    }
+}
+{
+    "_id": {
+        "$oid": "605bffaa50a3ed032b06c7cb"
+    },
+    "State": "California",
+    "Territory": {
+        "$oid": "605bfec750a3ed032b06c7c9"
+    }
+}
+{
+    "_id": {
+        "$oid": "605bffdb50a3ed032b06c7cc"
+    },
+    "State": "Guam",
+    "Territory": {
+        "$oid": "605bfec750a3ed032b06c7c9"
+    }
+}
+{
+    "_id": {
+        "$oid": "605bfff250a3ed032b06c7cd"
+    },
+    "State": "New Mexico",
+    "Territory": {
+        "$oid": "605bfec750a3ed032b06c7c9"
+    }
+}
+{
+    "_id": {
+        "$oid": "605c000450a3ed032b06c7ce"
+    },
+    "State": "Texas",
+    "Territory": {
+        "$oid": "605bfec750a3ed032b06c7c9"
+    }
+}
+
+{
+    "_id": {
+        "$oid": "605bfec750a3ed032b06c7c9"
+    },
+    "TerritoryID": {
+        "$numberInt": "4"
+    },
+    "TerritoryName": "Southwest"
+}
+

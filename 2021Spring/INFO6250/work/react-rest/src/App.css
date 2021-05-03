@@ -1,0 +1,35 @@
+.fact_count , .dropdown, .display_button,.loading,.error_message{
+  text-align: center;
+}
+
+.facts {
+  height: 300px;
+  width: auto;
+  overflow-x: scroll;
+  border: 2px solid red;
+  border-radius: 25px;
+}
+.fact_count{
+  font-size: x-large;
+}
+.fact_count,.fact_number{
+  font-weight: bold;
+}
+
+li{
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+.page_number{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.error_message {
+  background-color: red;
+  font-weight: bold;
+  width: fit-content;
+
+}
+
+

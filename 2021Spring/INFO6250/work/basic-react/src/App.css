@@ -1,0 +1,22 @@
+.warning {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+
+.success {
+  color: #270;
+  background-color: #DFF2BF;
+}
+
+.info{
+  color: #059;
+  background-color: #BEF;
+}
+
+.info,
+.success,
+.warning{
+  width: 250px;
+  margin: 10px 0;
+  border-radius: 3px 3px 3px 3px;
+}

@@ -1,0 +1,45 @@
+.delete { 
+    margin-left: 10px;
+    font-weight: bold;
+    background: red;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+li > *:hover{
+    border: 2px solid black;
+} 
+
+li:hover {
+    cursor: pointer;
+    background-color: yellow;
+    margin: 2px;
+    padding: 5px;
+}
+
+  
+.deleted {
+    transition: all 0.5s ease-out;
+    opacity: 0;
+}
+
+li.adding {
+    cursor: pointer;
+    background-color: greenyellow;
+    margin: 2px;
+    padding: 5px;
+}
+
+.adding {
+    animation-name: add;
+    animation-duration: 0.6s;
+}
+
+
+@keyframes add {
+    0%   {opacity: 0.1;}
+    25%  {opacity: 0.3;}
+    50%  {opacity: 0.5;}
+    100% {opacity: 0.8;}
+}

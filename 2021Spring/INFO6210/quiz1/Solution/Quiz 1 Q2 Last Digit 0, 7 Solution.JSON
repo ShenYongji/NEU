@@ -1,0 +1,25 @@
+{
+  "TerritoryID": 3,
+  "TerritoryName": "Central",
+  "States": [
+    {
+      "StateName": "Arkansas",
+      
+    },
+    {
+      "StateName": "Colorado",
+      
+    },
+    {
+      "StateName": "Iowa",
+      
+    },
+    {
+      "StateName": "Illinois",
+      
+    },
+    {
+      "StateName": "Kansas"
+    }
+  ]
+}

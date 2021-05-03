@@ -1,0 +1,58 @@
+.ingredients, .instructions{
+    font-weight:bold
+}
+
+span.recipe-title{
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.item{
+    border-bottom: 1px solid #aaa;
+    width:60%;
+}
+
+
+dialog.input_dialog {
+    height: 400px;
+    width: 300px
+}
+
+dialog.input_dialog > textarea{
+    width: 300px;
+    height:100px;
+    resize: none;
+}
+dialog.input_dialog > input{
+    width: 300px
+}
+
+dialog.loginpage{
+    width: 300px;
+    height: 200px
+
+}
+
+input.username{
+    width: 300px;
+}
+
+.recipes-app {
+    display: flex;
+}
+.display-panel{
+    width: 70%;
+    /* border-right: 1px solid #aaa; */
+}
+
+.dialog-demo{
+    width: 400px;
+    height: 400px;
+    overflow: scroll;
+    word-break: break-word;
+}
+
+/* .bth-button{
+    color: blue;
+    border-bottom: 1px solid #aaa;
+} */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class = 'user'> 
+    </div>
+    <dialog class="loginpage">
+        <div>
+            <h4>Welcome</h4>
+            <hr>
+            <label>Username</label>
+            <br>
+            <input class = "username" name="username">
+            <br>
+            <button class = "login" type="submit">Login</button>
+            <button class = "login-cancel">cancel</button>
+            <div class="login-status"></div>
+        </div>
+        <div>
+            <p class="login-status"></p>
+        </div>
+    </dialog>
+    <dialog class="input_dialog">
+        <h4>Add New Recipe</h4>
+        <hr>
+        <label>Recipe Title</label>
+        <br>
+        <input class="input_title"></input>
+        <br>
+        <label>Recipe Ingredients</label>
+        <br>
+        <textarea class="input_ingredients"></textarea>
+        <br>
+        <label>Recipe Instructions</label>
+        <br>
+        <textarea class="input_instructions"></textarea>
+        <button class="addNew_submit">Submit</button>
+        <button class="addNew_cancel">Cancel</button>
+        <div class="newrecipestatus"></div>
+    </dialog>
+    <h2>Recipes</h2>
+    <hr>
+    <div class="input_panel"></div>
+    <div class = "list-status"></div>
+    <div class="recipes-app">
+        <div class="display-panel">
+            <ul class="recipe-list">
+            </ul>
+        </div>
+        <dialog class = "dialog-demo">
+            <a href='/load' class="bth-button">&lt;Return to Home Page</a>
+            <span>Recipe Details screen</span>
+            <div class="details-status"></div>
+            <hr>
+            <div class="dialog-details">
+            </div>
+        </dialog>
+    </div>
+    <script src='./recipes.js'> </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+}
+
+ul.list > li {
+    list-style-position:inside;
+    border: 1px solid black;
+    width: auto;
+    padding: 0.5em;
+    display: list-item;
+}
+
+.list > li:nth-child(even){
+    background-color: brown;
+}
+
+.list > li:nth-child(odd){
+    background-color: white ;
+}
+
+h1,h3 {
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    background-color:tomato;
+}

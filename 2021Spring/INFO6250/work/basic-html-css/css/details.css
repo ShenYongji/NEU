@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.error{
+    background: white;
+    padding: 10px ;
+    border-radius: 0 ;
+    border: 2px solid red;
+    display: inline-block;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+
+div.form {
+    margin-top: 20px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+}

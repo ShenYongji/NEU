@@ -1,0 +1,31 @@
+{
+   "_id": 45819,
+   "ProductID": 751,
+   "Name":"Road-150 Red, 48",
+   "OrderQty": 1,
+   "UnitPrice": 3578
+}
+
+{
+    
+    "_id": 53175,
+    "ProductID": 999,
+    "Name": "Road-750 Black, 52",
+    "OrderQty": 1,
+    "UnitPrice": 540
+}
+
+
+{
+    "_id": 20160,
+    "FirstName": "George",
+    "LastName": "Garcia",
+    "SalesOrders": [
+       {
+        "SalesOrderID": 45819
+       }, 
+       {
+        "SalesOrderID": 53175
+       }
+    ]
+}
