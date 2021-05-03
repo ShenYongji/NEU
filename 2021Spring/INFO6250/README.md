@@ -1,44 +1,63 @@
-# Assignment - Testing node and git
+# Basic Express
 
-** Due: Thu Jan 28, 11:59pm PT** 
+* start from the up-to-date main branch (`git checkout main; git pull origin main`)
+* Create a feature branch named 'basic-express' (`git checkout -b basic-express`)
+* modify the files in this directory to have the required features
+* add, commit, and push the branch to github
+* Create a PR to merge to main
+* Be sure to include the reviewer(s)  
+* Due by Thu Feb 11, 11:59pm PT
 
-# Instructions
+## Goal and Requirements
 
-NOTE: This assumes you have followed all of the instructions from the "setup-for-this-class" document.  Do that first.
+The Chat application will work to show all messages, and add messages from a single user
 
-From this directory, at the command line:
+* `http://localhost:3000/` will DYNAMICALLY return the html for the page
+* The CSS will be loaded as a STATIC asset (hint: you'll have to provide the static file AND make sure it is loaded by the HTML)
+* The CSS should be attractive and useful.  The visuals should make it easy to use.
+* The HTML will display all of the messages that have been sent, including new ones.
+* The HTML will contain a form to submit as POST(method) to `/chat` (action)
+  * The form will contain a hidden field with the username.  Hardcode this to username of your choice.
+  * The form will contain a field with the message.
+* The server-side JS will handle this request ( fill in the `app.post()` from the included code)
+  * It will add the new message to the array of messages
+  * It will redirect to `/` (See included code, watch what happens in your network tab in the browser)
+* It should follow the best practices outlined in class
+* I should be able to run your code with `npm install` and then `node server.js`
 
-1. Run `npm install`
-  * You should see some text while it downloads a library or two
-  * If you see a permission error (EACCES) you probably installed something as root/administrator, and now your normal user account can't override it. That's a bit messy to clean up, but it's doable and you want to clean that up NOW rather than later in the semester.
-  * Lots of ways of addressing this exist, with varying levels of success and computer security.  Speak up on Slack if this is an issue for you.
-  * You only need to run this successfully once.  Once the dependencies are installed, you can run the program (see below) as much as needed without reinstalling.  Reinstalling is only necessary if the dependencies are changed.
-1. Run `node list.js`
-  * You should see some names printed to the console
-1. You are going to make changes, so you should first create a "feature branch" to create those changes in
-  * run `git checkout -b setup-info6250`
-  * This branch name, "setup-info6250", is specific to this assignment.  Each assignment will be done in its own branch with a unique name.
-1. Edit list.js and add your name, NEU ID, Slack handle (with an `@`), and github id to the list (Make sure you match the upper/lower case!)
-1. Run `node list.js` again now that you've saved your changes
-  * You should see your name added to the list that outputs
-  * Everything should run smoothly
-  * Fix any errors that do turn up and repeat this step until everything runs smoothly
-1. Add the file to the list of files to commit: `git add list.js`
-1. Run `git status` and make sure nothing is listed as an 'Untracked file' and only `list.js` is listed to be added.
-  * I have never heard *anyone* say "I run git status too much".  It is much easier to clean up a commit BEFORE you make it, so always run git status before doing a commit.  Always pay attention to the output of git status.  Multiple students forget this step each semester.
-  * If you have git troubles, I recommend consulting the list of common solutions at https://ohshitgit.com
-1. Commit the file: `git commit -m "Adds MYNAME"` (Example: `git commit -m"Adds Lex"`
-  * This commit message reflects your changes.  If you make other changes and have to commit those, and when you commit other assignments, the commit messages should reflect THOSE changes, they should NOT say "Adds MYNAME".
-  * Repeat: Future assignments should not have commit messages that say "Adds MYNAME", that is specific to this assignment
-1. Send your changes to github: `git push origin setup-info6250` 
-1. Go to the github page for this repository and create a Pull Request(PR), with 'main' on the left dropdown and your setup-info6250 branch on the right dropdown.
-  * Do not merge, you must create a Pull Request.  Your repositories should be set so that you cannot merge to main without a Pull Request, but they are created without that requirement so there is a period of time where you can merge, but you shouldn't do it.  Learn how to create the PR, because that's how all assignments for the class will be turned in, and if you do it wrong, your grade could suffer.
-  * Add myself and the TA to review the PR.  If you don't do this, we may not know your work is ready and you won't get credit for it.
-2. If the changes look correct, Create the Pull Request.
-  * If you edited and added `.gitignore`, that change should be listed as well as your changes to list.js
-  * There should NOT be changes to other files.
-  * Be sure to **add me (and any TAs) as reviewer** on the PR.
-1. Remember to return the main branch!  `git checkout main`.  In this branch, your changes do not exist (not until they are approved, merged in, and you pull the updated main branch)
+### Special Requirements
+* Create a package.json file that lists `express` as a dependency.  (Hint: remember how we created one and added a dependency in class)
+* Add `package-lock.json` to your .gitignore file at the root of the repo
 
-Then you're done! At some point your code will be reviewed merged into main. This is where our work is different than a "real" job: For most employers you are usually responsible for merging your code after it is approved, but for this class the TA/instructor will merge it after approval.
+## Allowances
+* You may modify the generated HTML as you see fit
+    * But it must be fundamentally semantically valid and other best practices from class
+* You may modify the CSS as you see fit
+    * But you must follow the best practices given in class
+    * Using/extending your CSS from assignments/classes is allowed and encouraged
+* The `name` form fields attributes must be:
+    * `username` for the username
+    * `text` for the new message text
+* You must use the correct HTTP methods (GET for loading pages, POST for adding content) as listed
+* You must use the route paths as given/described
+    * /
+    * /chat
+* You may add additional JS files (server-side ONLY) that you write
+    * But they must maintain/extend the existing separation of concerns
+* Formatting dates and times is a nightmare in any language, so you do not HAVE to format your timestamps  
+
+## Restrictions
+* DO NOT HAVE ANY "PASSWORD" behavior
+    * Poor security is BAD security - we will not even pretend to have security yet
+* Do NOT add extra routes beyond those described above
+* Do NOT change how the routes get/pass data except as described here
+* Do NOT use external JS other than express itself
+    * This means no client-side (browser) JS.  Only server-side.
+* Do NOT use external CSS libraries
+* Do NOT use meta-tag redirects
+* You may NOT use floats to do more than manage flowing text with images
+* You may NOT use HTML tables or CSS table layouts
+* You may NOT use client-side/browser-side Javascript
+* You may NOT use CSS preprocessors, minifiers, or other tools to modify your CSS
+  * Reviewers must be able to read your work easily
 
