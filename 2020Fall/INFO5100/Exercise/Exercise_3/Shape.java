@@ -30,7 +30,7 @@ abstract class Shape implements java.io.Serializable{
 }
 
 class Triangle extends Shape{
-
+    //Triangle class from Shape
     int side1;
     int side2;
     int base;
@@ -39,17 +39,20 @@ class Triangle extends Shape{
     double Perimeter;
 
     @Override
+    //Calculate area for triangle
     double calculateArea() {
         this.area = (base*height)/2;
         return this.area;
     }
 
     @Override
+    //Calculate Perimeter for triangle
     double calculatePerimeter() {
         this.Perimeter = side1+side2+base;
         return this.Perimeter;
     }
     @Override
+    //Deserialization for triangle
     Triangle deserialization(String filename) {
         try
         {
@@ -82,7 +85,7 @@ class Triangle extends Shape{
         }
         return null;
     }
-
+    //Initialization
     public Triangle(int side1,int side2,int base,int height){
             this.side1 = side1;
             this.side2 = side2;
@@ -95,17 +98,20 @@ class Triangle extends Shape{
 
 
 class circle extends Shape{
+    //Circle class from Shape
     double r;
     double area;
     double circumference;
 
     @Override
+    //Calculate area for circle
     double calculateArea() {
         this.area = Math.PI * r * r;
         return this.area;
     }
 
     @Override
+
     circle deserialization(String filename) {
         try
         {
@@ -138,11 +144,12 @@ class circle extends Shape{
     }
 
     @Override
+    //Calculate perimeter for circle
     double calculatePerimeter() {
         this.circumference = 2 * Math.PI * r;
         return this.circumference;
     }
-
+    //Initialization
     public circle(double r){
         this.r = r;
     }
@@ -151,23 +158,26 @@ class circle extends Shape{
 
 
 class Rectangle extends Shape{
+    //Rectangle from Shape
     int x;
     int y;
     double area;
     double perimeter;
-
+    //Initialization
     public Rectangle(int x, int y){
         this.x = x;
         this.y = y;
     }
 
     @Override
+    // Calculate area for rectangle
     double calculateArea() {
         this.area = x*y;
         return this.area;
     }
 
     @Override
+    //Perimeter
     double calculatePerimeter() {
         this.perimeter = 2*(x+y);
         return this.perimeter;

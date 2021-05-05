@@ -3,7 +3,7 @@ import java.util.*;
 
 
  class Student {
-
+    // Parent class
     public Object[] setAStudent(String name, String StudyingSchedule, int[] score){
         Object[] tmp_student = new Object[3];
         return tmp_student;
@@ -12,18 +12,11 @@ import java.util.*;
     void printname(){};
 
     void printexam(){};
-//    {
-//        Object[] tmp_student = new Object[3];
-//        tmp_student[0] = name;
-//        tmp_student[1] = StudyingSchedule;
-//        tmp_student[2] = score;
-//        return tmp_student;
-//    }
 
 }
 
 class Full_Time extends Student{
-
+     // Data structure for full time student
     HashMap<String,int[]> ft_list = new HashMap<String,int[]>();
     @Override
     public Object[] setAStudent(String name, String StudyingSchedule, int[] score){
@@ -48,7 +41,7 @@ class Full_Time extends Student{
 }
 
 class Part_Time extends Student{
-
+    // Data structure for part time student
     List<String> pt_list = new ArrayList<String>();
     @Override
     public Object[] setAStudent(String name, String StudyingSchedule, int[] score){

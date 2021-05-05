@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="preface" prefHeight="304.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalProject.PFcontroller">
+   <children>
+      <ImageView fx:id="logo" fitHeight="200.0" fitWidth="204.0" layoutX="57.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="306.0" layoutY="46.0" prefHeight="35.0" prefWidth="233.0" text="Image Management Tool ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="105.0" prefHeight="35.0" prefWidth="89.0" text="INFO 5100">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="164.0" prefHeight="35.0" prefWidth="279.0" text="Designed by: Yongji Shen &amp; Zhiming Xue">
+         <font>
+            <Font name="System Font" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonStart" layoutX="364.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleStart" prefHeight="35.0" prefWidth="89.0" text="START">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

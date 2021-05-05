@@ -1,13 +1,13 @@
 package Exercise_1;
 import java.util.*;
 
-//@SuppressWarnings("ALL")
 public class Session {
     List<Object[]> Students_list = new ArrayList<Object[]>();
     Student ft = new Full_Time();
     Student pt = new Part_Time();
 
     void setStudentSet(String name, String StudyingSchedule, int[] score){
+        //Determine the type of student
         if (StudyingSchedule == "Full Time"){
             this.Students_list.add(this.ft.setAStudent(name,StudyingSchedule,score));
 
@@ -28,6 +28,7 @@ public class Session {
 //
     public void calAvg(){
         for (Object[] Student : this.Students_list) {
+            //Calculating average of score
             double avg = Arrays.stream((int[]) Student[2]).average().getAsDouble();
             System.out.println("The average quiz score of "+Student[0]+" is "+String.format("%.2f", avg));
         }

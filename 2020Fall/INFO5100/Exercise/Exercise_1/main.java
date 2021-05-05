@@ -5,6 +5,7 @@ import java.util.Random;
 public class main {
 
     static String select_schedule(){
+        //Randomly select the type of student
         String[] Schedule = {"Full Time", "Part Time"};
         Random random = new Random();
         int select = random.nextInt(Schedule.length);
@@ -21,6 +22,7 @@ public class main {
     }
 
     private static int getRandomNumber(int min, int max) {
+        //Randomly create score for students
         return (int) ((Math.random() * (max - min)) + min);
     }
 
